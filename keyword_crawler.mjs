@@ -96,8 +96,10 @@ function extractMatches($, pageUrl) {
 
   // Candidati: titoli, elementi bold, link — punti dove di solito compare il nome del prodotto
   $('h1, h2, h3, h4, strong, b, a').each((_, el) => {
-    const ownText = $(el).text().trim();
-    if (!ownText || ownText.length > 120) return; // scarta paragrafi enormi come "titolo"
+    const ownTextRaw = $(el).text().trim();
+    if (!ownTextRaw) return;
+    const ownText = ownTextRaw.replace(/\s+/g, ' ').trim();
+    if (ownText.length > 160) return; // scarta paragrafi enormi come "titolo"
 
     const lower = ownText.toLowerCase();
     const matchedKeyword = KEYWORDS.find((k) => lower.includes(k));
@@ -164,6 +166,10 @@ async function crawl() {
       const html = await fetchText(url);
       const $ = cheerio.load(html);
 
+      // Rimuove tag che non contengono mai testo utile e che spesso
+      // "sporcano" il textContent (CSS inline, script, tracking, ecc.)
+      $('style, script, noscript, svg, iframe').remove();
+
       allMatches.push(...extractMatches($, url));
 
       $('a[href]').each((_, a) => {
@@ -183,10 +189,15 @@ async function crawl() {
 }
 
 async function main() {
-  const matches = await crawl();
+  const rawMatches = await crawl();
+
+  // Tiene solo le voci che sembrano vere promozioni: deve esserci
+  // almeno un prezzo o un testo promo riconosciuto. Scarta le semplici
+  // etichette di prodotto (es. "Internet S", "Internet M") senza contesto.
+  const matches = rawMatches.filter((m) => m.price !== null || m.promo !== null);
 
   if (matches.length === 0) {
-    console.error('Nessuna corrispondenza trovata.');
+    console.error('Nessuna corrispondenza con prezzo/promo trovata.');
     process.exit(1);
   }
 
@@ -195,6 +206,7 @@ async function main() {
     start_url: START_URL,
     keywords: KEYWORDS,
     total_matches: matches.length,
+    total_matches_before_filter: rawMatches.length,
     offers: matches,
   };
 
