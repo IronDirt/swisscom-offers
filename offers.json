@@ -1,0 +1,187 @@
+{
+  "scraped_at": "2026-07-10T09:21:07.988Z",
+  "start_url": "https://www.swisscom.ch/it/clienti-privati.html",
+  "keywords": [
+    "netflix",
+    "disney",
+    "internet",
+    "tv",
+    "myservice",
+    "mysecurity"
+  ],
+  "total_matches": 19,
+  "total_matches_before_filter": 350,
+  "offers": [
+    {
+      "keyword": "internet",
+      "title": "Il miglior abbonamento Internet e la TV più amata Internet e TV 1 anno da 39.90/mese All’offerta",
+      "snippet": "Il miglior abbonamento Internet e la TV più amata Internet e TV 1 anno da 39.90/mese All’offerta",
+      "promo": null,
+      "price": "da 39.90/mese",
+      "link": "https://www.swisscom.ch/it/clienti-privati/abbonamento-combinato/promotion.html",
+      "found_on_page": "https://www.swisscom.ch/it/clienti-privati/offerte.html"
+    },
+    {
+      "keyword": "internet",
+      "title": "Il miglior abbonamento Internet Internet per 1 anno a 39.90/mese All’offerta",
+      "snippet": "Il miglior abbonamento Internet Internet per 1 anno a 39.90/mese All’offerta",
+      "promo": null,
+      "price": "39.90/mese",
+      "link": "https://www.swisscom.ch/it/clienti-privati/abbonamento-internet/promotion.html",
+      "found_on_page": "https://www.swisscom.ch/it/clienti-privati/offerte.html"
+    },
+    {
+      "keyword": "internet",
+      "title": "Per gli appassionati di calcio 1 anno di abbonamento blue Internet e blue TV XL Sport da 49.80/mese All'offerta",
+      "snippet": "Per gli appassionati di calcio 1 anno di abbonamento blue Internet e blue TV XL Sport da 49.80/mese All'offerta",
+      "promo": null,
+      "price": "da 49.80/mese",
+      "link": "https://www.swisscom.ch/it/clienti-privati/abbonamento-combinato/abbonamento-internet-tv.html",
+      "found_on_page": "https://www.swisscom.ch/it/clienti-privati/offerte.html"
+    },
+    {
+      "keyword": "internet",
+      "title": "Combina Internet e Mobile Risparmia 20.–/mese con lo sconto combinato All'offerta",
+      "snippet": "Combina Internet e Mobile Risparmia 20.–/mese con lo sconto combinato All'offerta",
+      "promo": null,
+      "price": "20.–/mese",
+      "link": "https://www.swisscom.ch/it/clienti-privati/abbonamento-combinato/sconto-combinato.html",
+      "found_on_page": "https://www.swisscom.ch/it/clienti-privati/offerte.html"
+    },
+    {
+      "keyword": "internet",
+      "title": "Internet e TV per 1 anno a soli 39.90/mese",
+      "snippet": "Internet e TV per 1 anno a soli 39.90/mese",
+      "promo": null,
+      "price": "39.90/mese",
+      "link": null,
+      "found_on_page": "https://www.swisscom.ch/it/clienti-privati/abbonamento-combinato/promotion.html"
+    },
+    {
+      "keyword": "internet",
+      "title": "Internet e TV 1 anno da 39.90/mese",
+      "snippet": "Il miglior abbonamento Internet e la TV più amata Internet e TV 1 anno da 39.90/mese",
+      "promo": null,
+      "price": "da 39.90/mese",
+      "link": null,
+      "found_on_page": "https://www.swisscom.ch/it/clienti-privati/abbonamento-combinato/promotion.html"
+    },
+    {
+      "keyword": "disney",
+      "title": "Disney+",
+      "snippet": "Disney+ Dettagli e condizioni del contratto Con la sottoscrizione di un nuovo contratto blue Internet (con/senza blue TV), riceverai 3 mesi di Disney+ Standard con pubblicità come credito (valore totale: 29.70 (3 x 9.90/mese)). Il credito è disponibile dopo l'ordine con un indirizzo e-mail. Attivazione dell'offerta Disney+ L'opzione Disney+ si attiva automaticamente dopo l'attivazione di blue Inte",
+      "promo": null,
+      "price": "9.90/mese",
+      "link": "https://www.swisscom.ch/myswisscom/products/subhub/activate/DisneyPlus?lang=it",
+      "found_on_page": "https://www.swisscom.ch/it/clienti-privati/abbonamento-combinato/promotion.html"
+    },
+    {
+      "keyword": "internet",
+      "title": "Internet per 1 anno a 39.90/mese",
+      "snippet": "Scopri le tue possibilità Internet per 1 anno a 39.90/mese",
+      "promo": null,
+      "price": "39.90/mese",
+      "link": null,
+      "found_on_page": "https://www.swisscom.ch/it/clienti-privati/abbonamento-internet/promotion.html"
+    },
+    {
+      "keyword": "internet",
+      "title": "Internet e TV per 1 anno a soli 39.90/mese",
+      "snippet": "Internet e TV per 1 anno a soli 39.90/mese",
+      "promo": null,
+      "price": "39.90/mese",
+      "link": null,
+      "found_on_page": "https://www.swisscom.ch/it/clienti-privati/abbonamento-internet/promotion.html"
+    },
+    {
+      "keyword": "internet",
+      "title": "Il miglior abbonamento Internet e la TV più amata Internet e TV 1 anno da 39.90/mese All’offerta",
+      "snippet": "Il miglior abbonamento Internet e la TV più amata Internet e TV 1 anno da 39.90/mese All’offerta",
+      "promo": null,
+      "price": "da 39.90/mese",
+      "link": "https://www.swisscom.ch/it/clienti-privati/abbonamento-combinato/promotion.html",
+      "found_on_page": "https://www.swisscom.ch/it/clienti-privati/abbonamento-combinato/abbonamento-internet-tv.html"
+    },
+    {
+      "keyword": "internet",
+      "title": "Internet e TV per 1 anno a soli 39.90/mese",
+      "snippet": "Internet e TV per 1 anno a soli 39.90/mese",
+      "promo": null,
+      "price": "39.90/mese",
+      "link": null,
+      "found_on_page": "https://www.swisscom.ch/it/clienti-privati/abbonamento-combinato/promotion.html?ubc=BC-activation-wirelineAbo-SDoff"
+    },
+    {
+      "keyword": "internet",
+      "title": "Internet e TV 1 anno da 39.90/mese",
+      "snippet": "Il miglior abbonamento Internet e la TV più amata Internet e TV 1 anno da 39.90/mese",
+      "promo": null,
+      "price": "da 39.90/mese",
+      "link": null,
+      "found_on_page": "https://www.swisscom.ch/it/clienti-privati/abbonamento-combinato/promotion.html?ubc=BC-activation-wirelineAbo-SDoff"
+    },
+    {
+      "keyword": "disney",
+      "title": "Disney+",
+      "snippet": "Disney+ Dettagli e condizioni del contratto Con la sottoscrizione di un nuovo contratto blue Internet (con/senza blue TV), riceverai 3 mesi di Disney+ Standard con pubblicità come credito (valore totale: 29.70 (3 x 9.90/mese)). Il credito è disponibile dopo l'ordine con un indirizzo e-mail. Attivazione dell'offerta Disney+ L'opzione Disney+ si attiva automaticamente dopo l'attivazione di blue Inte",
+      "promo": null,
+      "price": "9.90/mese",
+      "link": "https://www.swisscom.ch/myswisscom/products/subhub/activate/DisneyPlus?lang=it",
+      "found_on_page": "https://www.swisscom.ch/it/clienti-privati/abbonamento-combinato/promotion.html?ubc=BC-activation-wirelineAbo-SDoff"
+    },
+    {
+      "keyword": "internet",
+      "title": "Il miglior abbonamento Internet e la TV più amata Internet e TV 1 anno da 39.90/mese All’offerta",
+      "snippet": "Il miglior abbonamento Internet e la TV più amata Internet e TV 1 anno da 39.90/mese All’offerta",
+      "promo": null,
+      "price": "da 39.90/mese",
+      "link": "https://www.swisscom.ch/it/clienti-privati/abbonamento-combinato/promotion.html",
+      "found_on_page": "https://www.swisscom.ch/it/clienti-privati/abbonamento-tv.html"
+    },
+    {
+      "keyword": "internet",
+      "title": "Il miglior abbonamento Internet e la TV più amata Internet e TV 1 anno da 39.90/mese All’offerta",
+      "snippet": "Il miglior abbonamento Internet e la TV più amata Internet e TV 1 anno da 39.90/mese All’offerta",
+      "promo": null,
+      "price": "da 39.90/mese",
+      "link": "https://www.swisscom.ch/it/clienti-privati/abbonamento-combinato/promotion.html",
+      "found_on_page": "https://www.swisscom.ch/it/clienti-privati/abbonamento-internet.html"
+    },
+    {
+      "keyword": "internet",
+      "title": "Internet Guard",
+      "snippet": "Con un abbonamento Internet di Swisscom ricevi numerosi extra gratuiti. Ad esempio, è incluso gratis un router WLAN. Con My Swisscom, la migliore app di servizio (primo posto nel test), installare e gestire il collegamento è un gioco da ragazzi. Internet Guard ti protegge mentre navigate senza dover installare software aggiuntivi. Ricevi Bluewin e-mail con 5 GB di spazio e 10 GB di memoria per fot",
+      "promo": "incluso gratis",
+      "price": null,
+      "link": "https://www.swisscom.ch/it/clienti-privati/abbonamento-internet/sicuro-in-modo-digitale/internet-guard-details-lightbox.html",
+      "found_on_page": "https://www.swisscom.ch/it/clienti-privati/abbonamento-internet.html"
+    },
+    {
+      "keyword": "disney",
+      "title": "Attivazione dell'offerta Disney+",
+      "snippet": "Dettagli e condizioni del contratto Sottoscrivendo un nuovo blue Mobile riceverai 3 mesi di Disney+ Standard con pub come credito (valore totale: 29.70 (3 x 9.90/mese)). Il credito è disponibile dopo l'ordine con un indirizzo e-mail. Attivazione dell'offerta Disney+ L'opzione Disney+ si attiva automaticamente dopo l'attivazione di blue Mobile. I 3 mesi gratuiti decorrono dal momento dell'attivazio",
+      "promo": null,
+      "price": "9.90/mese",
+      "link": "https://www.swisscom.ch/myswisscom/products/subhub/activate/DisneyPlus?lang=it",
+      "found_on_page": "https://www.swisscom.ch/it/clienti-privati/abbonamento-mobile/blue-mobile-s.html"
+    },
+    {
+      "keyword": "disney",
+      "title": "Attivazione dell'offerta Disney+",
+      "snippet": "Dettagli e condizioni del contratto Sottoscrivendo un nuovo blue Mobile riceverai 3 mesi di Disney+ Standard con pub come credito (valore totale: 29.70 (3 x 9.90/mese)). Il credito è disponibile dopo l'ordine con un indirizzo e-mail. Attivazione dell'offerta Disney+ L'opzione Disney+ si attiva automaticamente dopo l'attivazione di blue Mobile. I 3 mesi gratuiti decorrono dal momento dell'attivazio",
+      "promo": null,
+      "price": "9.90/mese",
+      "link": "https://www.swisscom.ch/myswisscom/products/subhub/activate/DisneyPlus?lang=it",
+      "found_on_page": "https://www.swisscom.ch/it/clienti-privati/abbonamento-mobile/blue-mobile-m.html"
+    },
+    {
+      "keyword": "disney",
+      "title": "Attivazione dell'offerta Disney+",
+      "snippet": "Dettagli e condizioni del contratto Sottoscrivendo un nuovo blue Mobile riceverai 3 mesi di Disney+ Standard con pub come credito (valore totale: 29.70 (3 x 9.90/mese)). Il credito è disponibile dopo l'ordine con un indirizzo e-mail. Attivazione dell'offerta Disney+ L'opzione Disney+ si attiva automaticamente dopo l'attivazione di blue Mobile. I 3 mesi gratuiti decorrono dal momento dell'attivazio",
+      "promo": null,
+      "price": "9.90/mese",
+      "link": "https://www.swisscom.ch/myswisscom/products/subhub/activate/DisneyPlus?lang=it",
+      "found_on_page": "https://www.swisscom.ch/it/clienti-privati/abbonamento-mobile/blue-mobile-l.html"
+    }
+  ]
+}
