@@ -1,4 +1,4 @@
-name: Crawl Swisscom offers by keyword
+name: Scrape fixed Swisscom offer pages
 
 on:
   schedule:
@@ -9,7 +9,7 @@ permissions:
   contents: write
 
 jobs:
-  crawl:
+  scrape:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
@@ -21,8 +21,8 @@ jobs:
       - name: Install dependencies
         run: npm install cheerio
 
-      - name: Run crawler
-        run: node keyword_crawler.mjs
+      - name: Run scraper
+        run: node fixed_pages_scraper.mjs
 
       - name: Commit updated offers.json
         run: |
