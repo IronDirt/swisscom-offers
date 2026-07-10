@@ -1,45 +1,31 @@
-// keyword_crawler.mjs
-// Eseguito da GitHub Actions. Fa un crawling limitato di
-// swisscom.ch/it/clienti-privati/*, cerca le parole chiave indicate e
-// salva tutte le promozioni trovate in offers.json.
+// fixed_pages_scraper.mjs
+// Visita SOLO le pagine elencate in PAGES (nessun crawling del resto del sito),
+// cerca le keyword indicate e salva le promozioni trovate in offers.json.
+// Eseguito da GitHub Actions.
 
 import { writeFile } from 'node:fs/promises';
 import * as cheerio from 'cheerio';
 
 // ---------------------- CONFIG ----------------------
-const START_URL = 'https://www.swisscom.ch/it/clienti-privati.html';
-const ALLOWED_PREFIX = '/it/clienti-privati'; // resta solo dentro questa sezione
-const HOST = 'www.swisscom.ch';
+const PAGES = [
+  'https://www.swisscom.ch/it/clienti-privati/abbonamento-tv/pacchetti-supplementari.html',
+  'https://www.swisscom.ch/it/clienti-privati/abbonamento-internet/sicuro-in-modo-digitale.html',
+  'https://www.swisscom.ch/it/clienti-privati/abbonamento-tv.html',
+  'https://www.swisscom.ch/it/clienti-privati/abbonamento-internet/myservice.html',
+];
 
-const KEYWORDS = ['netflix', 'disney', 'internet', 'tv', 'myservice', 'mysecurity'];
-
-// Alcune keyword compaiono sul sito con spazio (es. "My Service") invece che
-// attaccate ("myservice"). Mappiamo le varianti da cercare nel testo verso
-// l'etichetta "canonica" da salvare nel JSON.
 const KEYWORD_VARIANTS = {
   netflix: ['netflix'],
   disney: ['disney'],
-  internet: ['internet'],
-  tv: ['tv'],
+  'blue binge': ['blue binge'],
   myservice: ['myservice', 'my service'],
   mysecurity: ['mysecurity', 'my security'],
+  tv: ['tv'],
 };
 
-const MAX_PAGES = 150;          // limite pagine visitate per run (alzato per coprire più sottopagine)
-const REQUEST_DELAY_MS = 700;   // pausa tra le richieste (cortesia verso il sito)
+const REQUEST_DELAY_MS = 700;
 const OUTPUT_FILE = 'offers.json';
 const USER_AGENT = 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0 Safari/537.36';
-
-// Pagine che sappiamo contenere promozioni importanti: vengono messe in
-// cima alla coda di crawling così vengono visitate per prime, a prescindere
-// da quanti hop di distanza siano dalla homepage. Aggiungi qui altri URL
-// "noti" man mano che li scopri.
-const PRIORITY_SEEDS = [
-  'https://www.swisscom.ch/it/clienti-privati/abbonamento-tv/pacchetti-supplementari.html',
-  'https://www.swisscom.ch/it/clienti-privati/abbonamento-combinato/promotion.html',
-  'https://www.swisscom.ch/it/clienti-privati/abbonamento-internet/promotion.html',
-  'https://www.swisscom.ch/it/clienti-privati/offerte.html',
-];
 // ------------------------------------------------------
 
 const sleep = (ms) => new Promise((r) => setTimeout(r, ms));
@@ -50,43 +36,6 @@ async function fetchText(url) {
   });
   if (!res.ok) throw new Error(`HTTP ${res.status} su ${url}`);
   return res.text();
-}
-
-async function loadRobotsDisallow() {
-  try {
-    const txt = await fetchText(`https://${HOST}/robots.txt`);
-    const lines = txt.split('\n').map((l) => l.trim());
-    const disallow = [];
-    let relevant = false;
-    for (const line of lines) {
-      if (/^user-agent:\s*\*/i.test(line)) { relevant = true; continue; }
-      if (/^user-agent:/i.test(line)) { relevant = false; continue; }
-      if (relevant && /^disallow:/i.test(line)) {
-        const path = line.split(':').slice(1).join(':').trim();
-        if (path) disallow.push(path);
-      }
-    }
-    return disallow;
-  } catch {
-    return []; // se robots.txt non è raggiungibile, procedi senza regole extra
-  }
-}
-
-function isDisallowed(pathname, disallowRules) {
-  return disallowRules.some((rule) => pathname.startsWith(rule));
-}
-
-function normalizeUrl(href, baseUrl) {
-  try {
-    const u = new URL(href, baseUrl);
-    u.hash = '';
-    if (u.host !== HOST) return null;
-    if (!u.pathname.startsWith(ALLOWED_PREFIX)) return null;
-    if (!u.pathname.endsWith('.html') && u.pathname !== ALLOWED_PREFIX) return null;
-    return u.toString();
-  } catch {
-    return null;
-  }
 }
 
 function extractPrice(text) {
@@ -103,11 +52,14 @@ function extractPromo(text) {
     /gratuito\s+per\s+il\s+primo\s+mese/i,
     /\d+\s*giorni?\s+di\s+prova\s+gratuita/i,
     /sconto\s+permanente\s+del\s+\d+%/i,
-    /prezzo\s+esclusivo\s+per\s+i\s+clienti\s+swisscom/i,
     /incluso\s+(gratis|senza\s+costi\s+aggiuntivi)/i,
     /credito\s*\(valore\s+totale/i,
     /extra\s+gratuit[io]/i,
     /1\s*mese\s+in\s+regalo/i,
+    /\d+[.,]?[–-]?\s*per\s+\d+\s*mes[ei]/i,       // es. "0.– per 1 mese"
+    /primo\s+mese\s+(gratis|gratuito|a\s+\d+[.,]\d{2})/i,
+    /prezzo\s+ridotto\s+per\s+i\s+primi\s+\d+\s*mes[ei]/i,
+    /primi\s+\d+\s*mes[ei]\s+.{0,30}?(scontat[oi]|ridott[oi])/i,
   ];
   for (const p of patterns) {
     const m = text.match(p);
@@ -116,17 +68,16 @@ function extractPromo(text) {
   return null;
 }
 
-/** Trova blocchi di testo che contengono una keyword e ne estrae uno snippet + link + prezzo/promo. */
+function matchKeyword(lowerText) {
+  for (const [canonical, variants] of Object.entries(KEYWORD_VARIANTS)) {
+    if (variants.some((v) => lowerText.includes(v))) return canonical;
+  }
+  return null;
+}
+
 function extractMatches($, pageUrl) {
   const found = [];
   const seenSnippets = new Set();
-
-  function matchKeyword(lowerText) {
-    for (const [canonical, variants] of Object.entries(KEYWORD_VARIANTS)) {
-      if (variants.some((v) => lowerText.includes(v))) return canonical;
-    }
-    return null;
-  }
 
   function pushMatch(matchedKeyword, ownText, container, linkOverride) {
     const dedupKey = matchedKeyword + '|' + ownText;
@@ -134,7 +85,7 @@ function extractMatches($, pageUrl) {
     seenSnippets.add(dedupKey);
 
     let contextText = container.text().replace(/\s+/g, ' ').trim();
-    if (contextText.length < 40) contextText = ownText; // fallback se il container è troppo corto
+    if (contextText.length < 40) contextText = ownText;
     contextText = contextText.slice(0, 400);
 
     let link = linkOverride;
@@ -142,7 +93,10 @@ function extractMatches($, pageUrl) {
       const a = container.is('a') ? container : container.find('a').first();
       link = a.attr ? a.attr('href') : null;
     }
-    const linkAbs = link ? (normalizeUrl(link, pageUrl) || safeAbsoluteUrl(link, pageUrl)) : null;
+    let linkAbs = null;
+    if (link) {
+      try { linkAbs = new URL(link, pageUrl).toString(); } catch { linkAbs = null; }
+    }
 
     found.push({
       keyword: matchedKeyword,
@@ -155,12 +109,11 @@ function extractMatches($, pageUrl) {
     });
   }
 
-  // 1) Testo in titoli, link, span, paragrafi corti, elementi bold
   $('h1, h2, h3, h4, h5, strong, b, a, span, p, li').each((_, el) => {
     const ownTextRaw = $(el).text().trim();
     if (!ownTextRaw) return;
     const ownText = ownTextRaw.replace(/\s+/g, ' ').trim();
-    if (ownText.length > 160) return; // scarta paragrafi enormi come "titolo"
+    if (ownText.length > 160) return;
 
     const lower = ownText.toLowerCase();
     const matchedKeyword = matchKeyword(lower);
@@ -177,7 +130,6 @@ function extractMatches($, pageUrl) {
     pushMatch(matchedKeyword, ownText, container, link);
   });
 
-  // 2) Immagini con keyword nell'alt (es. logo Netflix/Disney+ senza testo visibile)
   $('img[alt]').each((_, el) => {
     const alt = ($(el).attr('alt') || '').trim();
     if (!alt) return;
@@ -197,75 +149,33 @@ function extractMatches($, pageUrl) {
   return found;
 }
 
-function safeAbsoluteUrl(href, baseUrl) {
-  try {
-    return new URL(href, baseUrl).toString();
-  } catch {
-    return null;
-  }
-}
+async function main() {
+  const rawMatches = [];
 
-async function crawl() {
-  const disallowRules = await loadRobotsDisallow();
-
-  // I seed prioritari vanno per primi in coda, poi la homepage per scoprire
-  // il resto del sito via BFS.
-  const queue = [...PRIORITY_SEEDS, START_URL];
-  const visited = new Set();
-  const allMatches = [];
-
-  while (queue.length > 0 && visited.size < MAX_PAGES) {
-    const url = queue.shift();
-    if (visited.has(url)) continue;
-    visited.add(url);
-
-    const { pathname } = new URL(url);
-    if (isDisallowed(pathname, disallowRules)) {
-      console.log(`Skip (robots.txt): ${url}`);
-      continue;
-    }
-
+  for (const url of PAGES) {
     try {
-      console.log(`Visito (${visited.size}/${MAX_PAGES}): ${url}`);
+      console.log(`Visito: ${url}`);
       const html = await fetchText(url);
       const $ = cheerio.load(html);
-
-      // Rimuove tag che non contengono mai testo utile e che spesso
-      // "sporcano" il textContent (CSS inline, script, tracking, ecc.)
       $('style, script, noscript, svg, iframe').remove();
 
-      allMatches.push(...extractMatches($, url));
-
-      $('a[href]').each((_, a) => {
-        const next = normalizeUrl($(a).attr('href'), url);
-        if (next && !visited.has(next) && !queue.includes(next)) {
-          queue.push(next);
-        }
-      });
+      const matches = extractMatches($, url);
+      console.log(`  -> ${matches.length} corrispondenze grezze`);
+      rawMatches.push(...matches);
     } catch (err) {
       console.error(`Errore su ${url}: ${err.message}`);
     }
-
     await sleep(REQUEST_DELAY_MS);
   }
 
-  return allMatches;
-}
-
-async function main() {
-  const rawMatches = await crawl();
-
-  // Tiene solo le voci che sembrano vere promozioni: deve esserci
-  // almeno un prezzo o un testo promo riconosciuto. Scarta le semplici
-  // etichette di prodotto (es. "Internet S", "Internet M") senza contesto.
+  // Tiene solo le voci con un prezzo o una promo reale
   const qualityFiltered = rawMatches.filter((m) => m.price !== null || m.promo !== null);
 
-  // Deduplica GLOBALE (tra pagine diverse): stessa keyword+titolo+prezzo
-  // trovati su più pagine contano come un'unica offerta.
+  // Deduplica globale
   const globalSeen = new Set();
   const matches = [];
   for (const m of qualityFiltered) {
-    const key = `${m.keyword}|${m.title}|${m.price}`;
+    const key = `${m.keyword}|${m.title}|${m.price}|${m.promo}`;
     if (globalSeen.has(key)) continue;
     globalSeen.add(key);
     matches.push(m);
@@ -278,11 +188,10 @@ async function main() {
 
   const payload = {
     scraped_at: new Date().toISOString(),
-    start_url: START_URL,
-    keywords: KEYWORDS,
+    pages: PAGES,
+    keywords: Object.keys(KEYWORD_VARIANTS),
     total_matches: matches.length,
     total_matches_before_filter: rawMatches.length,
-    total_matches_before_dedup: qualityFiltered.length,
     offers: matches,
   };
 
