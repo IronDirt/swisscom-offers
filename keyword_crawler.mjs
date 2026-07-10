@@ -13,10 +13,33 @@ const HOST = 'www.swisscom.ch';
 
 const KEYWORDS = ['netflix', 'disney', 'internet', 'tv', 'myservice', 'mysecurity'];
 
-const MAX_PAGES = 80;           // limite pagine visitate per run
+// Alcune keyword compaiono sul sito con spazio (es. "My Service") invece che
+// attaccate ("myservice"). Mappiamo le varianti da cercare nel testo verso
+// l'etichetta "canonica" da salvare nel JSON.
+const KEYWORD_VARIANTS = {
+  netflix: ['netflix'],
+  disney: ['disney'],
+  internet: ['internet'],
+  tv: ['tv'],
+  myservice: ['myservice', 'my service'],
+  mysecurity: ['mysecurity', 'my security'],
+};
+
+const MAX_PAGES = 150;          // limite pagine visitate per run (alzato per coprire più sottopagine)
 const REQUEST_DELAY_MS = 700;   // pausa tra le richieste (cortesia verso il sito)
 const OUTPUT_FILE = 'offers.json';
 const USER_AGENT = 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0 Safari/537.36';
+
+// Pagine che sappiamo contenere promozioni importanti: vengono messe in
+// cima alla coda di crawling così vengono visitate per prime, a prescindere
+// da quanti hop di distanza siano dalla homepage. Aggiungi qui altri URL
+// "noti" man mano che li scopri.
+const PRIORITY_SEEDS = [
+  'https://www.swisscom.ch/it/clienti-privati/abbonamento-tv/pacchetti-supplementari.html',
+  'https://www.swisscom.ch/it/clienti-privati/abbonamento-combinato/promotion.html',
+  'https://www.swisscom.ch/it/clienti-privati/abbonamento-internet/promotion.html',
+  'https://www.swisscom.ch/it/clienti-privati/offerte.html',
+];
 // ------------------------------------------------------
 
 const sleep = (ms) => new Promise((r) => setTimeout(r, ms));
@@ -75,12 +98,16 @@ function extractPrice(text) {
 
 function extractPromo(text) {
   const patterns = [
-    /\d+\s*mes[ei]\s+(gratis|in\s+regalo|in\s+omaggio)/i,
+    /\d+\s*mes[ei]\s+.{0,50}?(gratis|in\s+regalo|in\s+omaggio|gratuit[io])/i,
+    /\d+\s*mes[ei]\s+di\s+[\w\s+]+?\s+come\s+credito/i,
     /gratuito\s+per\s+il\s+primo\s+mese/i,
     /\d+\s*giorni?\s+di\s+prova\s+gratuita/i,
     /sconto\s+permanente\s+del\s+\d+%/i,
     /prezzo\s+esclusivo\s+per\s+i\s+clienti\s+swisscom/i,
     /incluso\s+(gratis|senza\s+costi\s+aggiuntivi)/i,
+    /credito\s*\(valore\s+totale/i,
+    /extra\s+gratuit[io]/i,
+    /1\s*mese\s+in\s+regalo/i,
   ];
   for (const p of patterns) {
     const m = text.match(p);
@@ -94,40 +121,28 @@ function extractMatches($, pageUrl) {
   const found = [];
   const seenSnippets = new Set();
 
-  // Candidati: titoli, elementi bold, link — punti dove di solito compare il nome del prodotto
-  $('h1, h2, h3, h4, strong, b, a').each((_, el) => {
-    const ownTextRaw = $(el).text().trim();
-    if (!ownTextRaw) return;
-    const ownText = ownTextRaw.replace(/\s+/g, ' ').trim();
-    if (ownText.length > 160) return; // scarta paragrafi enormi come "titolo"
-
-    const lower = ownText.toLowerCase();
-    const matchedKeyword = KEYWORDS.find((k) => lower.includes(k));
-    if (!matchedKeyword) return;
-
-    // Risali a un contenitore ragionevole per prezzo/promo/link
-    let container = $(el);
-    let hops = 0;
-    let contextText = container.text();
-    while (contextText.length < 40 && hops < 4) {
-      container = container.parent();
-      contextText = container.text();
-      hops++;
+  function matchKeyword(lowerText) {
+    for (const [canonical, variants] of Object.entries(KEYWORD_VARIANTS)) {
+      if (variants.some((v) => lowerText.includes(v))) return canonical;
     }
-    contextText = contextText.replace(/\s+/g, ' ').trim().slice(0, 400);
+    return null;
+  }
 
+  function pushMatch(matchedKeyword, ownText, container, linkOverride) {
     const dedupKey = matchedKeyword + '|' + ownText;
     if (seenSnippets.has(dedupKey)) return;
     seenSnippets.add(dedupKey);
 
-    let link = null;
-    if (el.tagName === 'a') {
-      link = $(el).attr('href');
-    } else {
-      const a = container.find('a').first();
-      link = a.attr('href') || null;
+    let contextText = container.text().replace(/\s+/g, ' ').trim();
+    if (contextText.length < 40) contextText = ownText; // fallback se il container è troppo corto
+    contextText = contextText.slice(0, 400);
+
+    let link = linkOverride;
+    if (!link) {
+      const a = container.is('a') ? container : container.find('a').first();
+      link = a.attr ? a.attr('href') : null;
     }
-    const linkAbs = link ? normalizeUrl(link, pageUrl) || new URL(link, pageUrl).toString() : null;
+    const linkAbs = link ? (normalizeUrl(link, pageUrl) || safeAbsoluteUrl(link, pageUrl)) : null;
 
     found.push({
       keyword: matchedKeyword,
@@ -138,15 +153,64 @@ function extractMatches($, pageUrl) {
       link: linkAbs,
       found_on_page: pageUrl,
     });
+  }
+
+  // 1) Testo in titoli, link, span, paragrafi corti, elementi bold
+  $('h1, h2, h3, h4, h5, strong, b, a, span, p, li').each((_, el) => {
+    const ownTextRaw = $(el).text().trim();
+    if (!ownTextRaw) return;
+    const ownText = ownTextRaw.replace(/\s+/g, ' ').trim();
+    if (ownText.length > 160) return; // scarta paragrafi enormi come "titolo"
+
+    const lower = ownText.toLowerCase();
+    const matchedKeyword = matchKeyword(lower);
+    if (!matchedKeyword) return;
+
+    let container = $(el);
+    let hops = 0;
+    while (container.text().trim().length < 40 && hops < 4) {
+      container = container.parent();
+      hops++;
+    }
+
+    const link = el.tagName === 'a' ? $(el).attr('href') : null;
+    pushMatch(matchedKeyword, ownText, container, link);
+  });
+
+  // 2) Immagini con keyword nell'alt (es. logo Netflix/Disney+ senza testo visibile)
+  $('img[alt]').each((_, el) => {
+    const alt = ($(el).attr('alt') || '').trim();
+    if (!alt) return;
+    const lower = alt.toLowerCase();
+    const matchedKeyword = matchKeyword(lower);
+    if (!matchedKeyword) return;
+
+    let container = $(el).parent();
+    let hops = 0;
+    while (container.text().trim().length < 40 && hops < 5) {
+      container = container.parent();
+      hops++;
+    }
+    pushMatch(matchedKeyword, alt, container, null);
   });
 
   return found;
 }
 
+function safeAbsoluteUrl(href, baseUrl) {
+  try {
+    return new URL(href, baseUrl).toString();
+  } catch {
+    return null;
+  }
+}
+
 async function crawl() {
   const disallowRules = await loadRobotsDisallow();
 
-  const queue = [START_URL];
+  // I seed prioritari vanno per primi in coda, poi la homepage per scoprire
+  // il resto del sito via BFS.
+  const queue = [...PRIORITY_SEEDS, START_URL];
   const visited = new Set();
   const allMatches = [];
 
@@ -194,7 +258,18 @@ async function main() {
   // Tiene solo le voci che sembrano vere promozioni: deve esserci
   // almeno un prezzo o un testo promo riconosciuto. Scarta le semplici
   // etichette di prodotto (es. "Internet S", "Internet M") senza contesto.
-  const matches = rawMatches.filter((m) => m.price !== null || m.promo !== null);
+  const qualityFiltered = rawMatches.filter((m) => m.price !== null || m.promo !== null);
+
+  // Deduplica GLOBALE (tra pagine diverse): stessa keyword+titolo+prezzo
+  // trovati su più pagine contano come un'unica offerta.
+  const globalSeen = new Set();
+  const matches = [];
+  for (const m of qualityFiltered) {
+    const key = `${m.keyword}|${m.title}|${m.price}`;
+    if (globalSeen.has(key)) continue;
+    globalSeen.add(key);
+    matches.push(m);
+  }
 
   if (matches.length === 0) {
     console.error('Nessuna corrispondenza con prezzo/promo trovata.');
@@ -207,6 +282,7 @@ async function main() {
     keywords: KEYWORDS,
     total_matches: matches.length,
     total_matches_before_filter: rawMatches.length,
+    total_matches_before_dedup: qualityFiltered.length,
     offers: matches,
   };
 
