@@ -22,7 +22,7 @@ jobs:
         run: npm install cheerio
 
       - name: Run scraper
-        run: node fixed_pages_scraper.mjs
+        run: node keyword_crawler.mjs
 
       - name: Commit updated offers.json
         run: |
