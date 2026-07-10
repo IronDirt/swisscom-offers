@@ -1,0 +1,512 @@
+{
+  "scraped_at": "2026-07-10T09:41:54.831Z",
+  "start_url": "https://www.swisscom.ch/it/clienti-privati.html",
+  "keywords": [
+    "netflix",
+    "disney",
+    "internet",
+    "tv",
+    "myservice",
+    "mysecurity"
+  ],
+  "total_matches": 55,
+  "total_matches_before_filter": 1108,
+  "total_matches_before_dedup": 103,
+  "offers": [
+    {
+      "keyword": "netflix",
+      "title": "Attiva Netflix Standard e ricevi 3 mesi gratis.",
+      "snippet": "Attiva Netflix Standard e ricevi 3 mesi gratis.",
+      "promo": "3 mesi gratis",
+      "price": null,
+      "link": null,
+      "found_on_page": "https://www.swisscom.ch/it/clienti-privati/abbonamento-tv/pacchetti-supplementari.html"
+    },
+    {
+      "keyword": "netflix",
+      "title": "​ 3 mesi di Netflix Standard in omaggio",
+      "snippet": "​ 3 mesi di Netflix Standard in omaggio Da 14.90/mese",
+      "promo": "3 mesi di Netflix Standard in omaggio",
+      "price": "Da 14.90/mese",
+      "link": null,
+      "found_on_page": "https://www.swisscom.ch/it/clienti-privati/abbonamento-tv/pacchetti-supplementari.html"
+    },
+    {
+      "keyword": "tv",
+      "title": "Disponibile con blue TV M, L & XL",
+      "snippet": "Disponibile con blue TV M, L & XL 8.90/mese",
+      "promo": null,
+      "price": "8.90/mese",
+      "link": null,
+      "found_on_page": "https://www.swisscom.ch/it/clienti-privati/abbonamento-tv/pacchetti-supplementari.html"
+    },
+    {
+      "keyword": "disney",
+      "title": "Logo Disneyplus",
+      "snippet": "Disney+: Intrattenimento senza sosta con i grandi film appena usciti e un’infinità di serie firmate Disney, Pixar, Marvel, Star Wars, National Geographic e Star. Da 9.90/mese Scelga il pacchetto",
+      "promo": null,
+      "price": "Da 9.90/mese",
+      "link": "https://www.swisscom.ch/it/clienti-privati/abbonamento-tv/pacchetti-supplementari/disneyplus.html",
+      "found_on_page": "https://www.swisscom.ch/it/clienti-privati/abbonamento-tv/pacchetti-supplementari.html"
+    },
+    {
+      "keyword": "netflix",
+      "title": "Logo Netflix",
+      "snippet": "Netflix: Netflix propone un catalogo sconfinato di film, documentari, serie, anime, premiati originali Netflix e molto altro. Guardate quello che volete, quanto e quando volete. ​ 3 mesi di Netflix Standard in omaggio Da 14.90/mese Scelga il pacchetto",
+      "promo": "3 mesi di Netflix Standard in omaggio",
+      "price": "Da 14.90/mese",
+      "link": "https://www.swisscom.ch/it/clienti-privati/abbonamento-tv/pacchetti-supplementari/netflix.html",
+      "found_on_page": "https://www.swisscom.ch/it/clienti-privati/abbonamento-tv/pacchetti-supplementari.html"
+    },
+    {
+      "keyword": "internet",
+      "title": "Internet e TV per 1 anno a soli 39.90/mese",
+      "snippet": "Internet e TV per 1 anno a soli 39.90/mese",
+      "promo": null,
+      "price": "39.90/mese",
+      "link": null,
+      "found_on_page": "https://www.swisscom.ch/it/clienti-privati/abbonamento-combinato/promotion.html"
+    },
+    {
+      "keyword": "internet",
+      "title": "Internet e TV 1 anno da 39.90/mese",
+      "snippet": "Il miglior abbonamento Internet e la TV più amata Internet e TV 1 anno da 39.90/mese",
+      "promo": null,
+      "price": "da 39.90/mese",
+      "link": null,
+      "found_on_page": "https://www.swisscom.ch/it/clienti-privati/abbonamento-combinato/promotion.html"
+    },
+    {
+      "keyword": "disney",
+      "title": "3 mesi di Disney+ in regalo",
+      "snippet": "Solo online: 99.90 di attivazione in regalo 3 mesi di Disney+ in regalo",
+      "promo": "3 mesi di Disney+ in regalo",
+      "price": null,
+      "link": null,
+      "found_on_page": "https://www.swisscom.ch/it/clienti-privati/abbonamento-combinato/promotion.html"
+    },
+    {
+      "keyword": "tv",
+      "title": "Amanti della TV, attenzione!",
+      "snippet": "Amanti della TV, attenzione! Si gusti il suo nuovo blue Internet con blue TV XL. Può scegliere tra lo streaming incl. Netflix e Disney+ oppure lo sport con 24 campionati. Per un anno a soli 59.80/mese, in seguito da 134.70/mese.",
+      "promo": null,
+      "price": "59.80/mese",
+      "link": null,
+      "found_on_page": "https://www.swisscom.ch/it/clienti-privati/abbonamento-combinato/promotion.html"
+    },
+    {
+      "keyword": "disney",
+      "title": "Disney+",
+      "snippet": "Disney+ Dettagli e condizioni del contratto Con la sottoscrizione di un nuovo contratto blue Internet (con/senza blue TV), riceverai 3 mesi di Disney+ Standard con pubblicità come credito (valore totale: 29.70 (3 x 9.90/mese)). Il credito è disponibile dopo l'ordine con un indirizzo e-mail. Attivazione dell'offerta Disney+ L'opzione Disney+ si attiva automaticamente dopo l'attivazione di blue Inte",
+      "promo": "credito (valore totale",
+      "price": "9.90/mese",
+      "link": "https://www.swisscom.ch/myswisscom/products/subhub/activate/DisneyPlus?lang=it",
+      "found_on_page": "https://www.swisscom.ch/it/clienti-privati/abbonamento-combinato/promotion.html"
+    },
+    {
+      "keyword": "disney",
+      "title": "Attivazione dell'offerta Disney+",
+      "snippet": "Dettagli e condizioni del contratto Con la sottoscrizione di un nuovo contratto blue Internet (con/senza blue TV), riceverai 3 mesi di Disney+ Standard con pubblicità come credito (valore totale: 29.70 (3 x 9.90/mese)). Il credito è disponibile dopo l'ordine con un indirizzo e-mail. Attivazione dell'offerta Disney+ L'opzione Disney+ si attiva automaticamente dopo l'attivazione di blue Internet o b",
+      "promo": "credito (valore totale",
+      "price": "9.90/mese",
+      "link": "https://www.swisscom.ch/myswisscom/products/subhub/activate/DisneyPlus?lang=it",
+      "found_on_page": "https://www.swisscom.ch/it/clienti-privati/abbonamento-combinato/promotion.html"
+    },
+    {
+      "keyword": "disney",
+      "title": "Se il collegamento viene effettuato, l'opzione Disney+ continuerà a funzionare al costo di 9.90/mese dopo la scadenza della promozione.",
+      "snippet": "Se il collegamento viene effettuato, l'opzione Disney+ continuerà a funzionare al costo di 9.90/mese dopo la scadenza della promozione.",
+      "promo": null,
+      "price": "9.90/mese",
+      "link": null,
+      "found_on_page": "https://www.swisscom.ch/it/clienti-privati/abbonamento-combinato/promotion.html"
+    },
+    {
+      "keyword": "disney",
+      "title": "Possibile cambio di abbonamento Disney+",
+      "snippet": "Dettagli e condizioni del contratto Con la sottoscrizione di un nuovo contratto blue Internet (con/senza blue TV), riceverai 3 mesi di Disney+ Standard con pubblicità come credito (valore totale: 29.70 (3 x 9.90/mese)). Il credito è disponibile dopo l'ordine con un indirizzo e-mail. Attivazione dell'offerta Disney+ L'opzione Disney+ si attiva automaticamente dopo l'attivazione di blue Internet o b",
+      "promo": "credito (valore totale",
+      "price": "9.90/mese",
+      "link": "https://www.swisscom.ch/myswisscom/products/subhub/activate/DisneyPlus?lang=it",
+      "found_on_page": "https://www.swisscom.ch/it/clienti-privati/abbonamento-combinato/promotion.html"
+    },
+    {
+      "keyword": "disney",
+      "title": "È possibile passare da Disney+ Standard con pubblicità al modello di abbonamento Standard senza pubblicità o Premium durante i 3 mesi gratuiti.",
+      "snippet": "È possibile passare da Disney+ Standard con pubblicità al modello di abbonamento Standard senza pubblicità o Premium durante i 3 mesi gratuiti.",
+      "promo": "3 mesi gratuiti",
+      "price": null,
+      "link": null,
+      "found_on_page": "https://www.swisscom.ch/it/clienti-privati/abbonamento-combinato/promotion.html"
+    },
+    {
+      "keyword": "internet",
+      "title": "Internet per 1 anno a 39.90/mese",
+      "snippet": "Scopri le tue possibilità Internet per 1 anno a 39.90/mese",
+      "promo": null,
+      "price": "39.90/mese",
+      "link": null,
+      "found_on_page": "https://www.swisscom.ch/it/clienti-privati/abbonamento-internet/promotion.html"
+    },
+    {
+      "keyword": "internet",
+      "title": "6 mesi di blue Internet a 59.90/mese e blue TV a 0.–/mese",
+      "snippet": "6 mesi di blue Internet a 59.90/mese e blue TV a 0.–/mese",
+      "promo": null,
+      "price": "59.90/mese",
+      "link": null,
+      "found_on_page": "https://www.swisscom.ch/it/clienti-privati/abbonamento-internet/promotion.html"
+    },
+    {
+      "keyword": "internet",
+      "title": "Il miglior abbonamento Internet e la TV più amata Internet e TV 1 anno da 39.90/mese All’offerta",
+      "snippet": "Il miglior abbonamento Internet e la TV più amata Internet e TV 1 anno da 39.90/mese All’offerta",
+      "promo": null,
+      "price": "da 39.90/mese",
+      "link": "https://www.swisscom.ch/it/clienti-privati/abbonamento-combinato/promotion.html",
+      "found_on_page": "https://www.swisscom.ch/it/clienti-privati/offerte.html"
+    },
+    {
+      "keyword": "internet",
+      "title": "Il miglior abbonamento Internet Internet per 1 anno a 39.90/mese All’offerta",
+      "snippet": "Il miglior abbonamento Internet Internet per 1 anno a 39.90/mese All’offerta",
+      "promo": null,
+      "price": "39.90/mese",
+      "link": "https://www.swisscom.ch/it/clienti-privati/abbonamento-internet/promotion.html",
+      "found_on_page": "https://www.swisscom.ch/it/clienti-privati/offerte.html"
+    },
+    {
+      "keyword": "internet",
+      "title": "Il miglior abbonamento Internet",
+      "snippet": "Il miglior abbonamento Internet Internet per 1 anno a 39.90/mese",
+      "promo": null,
+      "price": "39.90/mese",
+      "link": null,
+      "found_on_page": "https://www.swisscom.ch/it/clienti-privati/offerte.html"
+    },
+    {
+      "keyword": "internet",
+      "title": "Per gli appassionati di calcio 1 anno di abbonamento blue Internet e blue TV XL Sport da 49.80/mese All'offerta",
+      "snippet": "Per gli appassionati di calcio 1 anno di abbonamento blue Internet e blue TV XL Sport da 49.80/mese All'offerta",
+      "promo": null,
+      "price": "da 49.80/mese",
+      "link": "https://www.swisscom.ch/it/clienti-privati/abbonamento-combinato/abbonamento-internet-tv.html",
+      "found_on_page": "https://www.swisscom.ch/it/clienti-privati/offerte.html"
+    },
+    {
+      "keyword": "internet",
+      "title": "1 anno di abbonamento blue Internet e blue TV XL Sport da 49.80/mese",
+      "snippet": "1 anno di abbonamento blue Internet e blue TV XL Sport da 49.80/mese",
+      "promo": null,
+      "price": "da 49.80/mese",
+      "link": null,
+      "found_on_page": "https://www.swisscom.ch/it/clienti-privati/offerte.html"
+    },
+    {
+      "keyword": "internet",
+      "title": "Combina Internet e Mobile Risparmia 20.–/mese con lo sconto combinato All'offerta",
+      "snippet": "Combina Internet e Mobile Risparmia 20.–/mese con lo sconto combinato All'offerta",
+      "promo": null,
+      "price": "20.–/mese",
+      "link": "https://www.swisscom.ch/it/clienti-privati/abbonamento-combinato/sconto-combinato.html",
+      "found_on_page": "https://www.swisscom.ch/it/clienti-privati/offerte.html"
+    },
+    {
+      "keyword": "internet",
+      "title": "Combina Internet e Mobile",
+      "snippet": "Combina Internet e Mobile Risparmia 20.–/mese con lo sconto combinato",
+      "promo": null,
+      "price": "20.–/mese",
+      "link": null,
+      "found_on_page": "https://www.swisscom.ch/it/clienti-privati/offerte.html"
+    },
+    {
+      "keyword": "internet",
+      "title": "Non avete ancora l’abbonamento Internet? Scegliete subito blue Internet con blue TV XL Streaming incl. blue Binge per 12 mesi a soli 59.90/mese.",
+      "snippet": "Non avete ancora l’abbonamento Internet? Scegliete subito blue Internet con blue TV XL Streaming incl. blue Binge per 12 mesi a soli 59.90/mese.",
+      "promo": null,
+      "price": "59.90/mese",
+      "link": null,
+      "found_on_page": "https://www.swisscom.ch/it/clienti-privati/abbonamento-tv/pacchetti-supplementari/bluebinge.html"
+    },
+    {
+      "keyword": "netflix",
+      "title": "Upgrade a Netflix Standard",
+      "snippet": "Upgrade a Netflix Standard 1080p (Full HD) Download possibili su 2 apparecchi +8.–/mese",
+      "promo": null,
+      "price": "8.–/mese",
+      "link": null,
+      "found_on_page": "https://www.swisscom.ch/it/clienti-privati/abbonamento-tv/pacchetti-supplementari/bluebinge.html"
+    },
+    {
+      "keyword": "netflix",
+      "title": "Upgrade a Netflix Premium",
+      "snippet": "Upgrade a Netflix Premium 4K (Ultra HD) + HDR Audio 3D Download possibili su 6 apparecchi +15.–/mese",
+      "promo": null,
+      "price": "15.–/mese",
+      "link": null,
+      "found_on_page": "https://www.swisscom.ch/it/clienti-privati/abbonamento-tv/pacchetti-supplementari/bluebinge.html"
+    },
+    {
+      "keyword": "disney",
+      "title": "Upgrade a Disney+ Premium",
+      "snippet": "Upgrade a Disney+ Premium Fino a 4K UHD e HDR; Dolby Atmos 4 stream contemporanei Download su un massimo di 10 terminali +6.50/mese",
+      "promo": null,
+      "price": "6.50/mese",
+      "link": null,
+      "found_on_page": "https://www.swisscom.ch/it/clienti-privati/abbonamento-tv/pacchetti-supplementari/bluebinge.html"
+    },
+    {
+      "keyword": "tv",
+      "title": "Pacchetto supplementare Swisscom TV: blue Binge",
+      "snippet": "blue Binge: pacchetto supplementare con Netflix e Disney+ ​ Netflix Base incluso ​ Disney+ Standard incluso ​ Film e serie a non finire su Netflix(apre una nuova finestra) e Disney+(apre una nuova finestra) a un imbattibile prezzo agevolato ​ Da guardare senza pubblicità su qualsiasi smartphone, tablet, computer o televisore ​ Serie scaricabili per guardarle offline Abbonamento annuale 24.90/mese ",
+      "promo": null,
+      "price": "24.90/mese",
+      "link": "https://www.netflix.com/ch-en/",
+      "found_on_page": "https://www.swisscom.ch/it/clienti-privati/abbonamento-tv/pacchetti-supplementari/bluebinge.html"
+    },
+    {
+      "keyword": "disney",
+      "title": "Disney+ Standard",
+      "snippet": "Disney+ Standard Fino a Full HD 1080p; qualità audio fino a 5.1 2 dispositivi contemporaneamente Download su fino a 10 dispositivi Streaming senza pubblicità 14.05/mese Durata minima del contratto 12 mesi, poi rescindibile mensilmente Scegli abbonamento",
+      "promo": null,
+      "price": "14.05/mese",
+      "link": "https://www.swisscom.ch/store-tv/wireline-tv/tvsubscriptioncenter?language=it&case=shortregistration&option=TV_DISNEYPLUS_REGULAR_ANNUAL&bigscreen=false&skipPdp=true&login=true&clientType=swisscomportal&sourceSystem=SUBSCRIPTION-HUB",
+      "found_on_page": "https://www.swisscom.ch/it/clienti-privati/abbonamento-tv/pacchetti-supplementari/disneyplus.html"
+    },
+    {
+      "keyword": "disney",
+      "title": "Disney+ Premium",
+      "snippet": "Disney+ Premium Fino a 4K UHD e HDR; fino a Dolby Atmos 4 dispositivi contemporanei Download su fino a 10 dispositivi Streaming senza pubblicità 19.50/mese Durata minima del contratto 12 mesi, poi rescindibile mensilmente Scegli abbonamento",
+      "promo": null,
+      "price": "19.50/mese",
+      "link": "https://www.swisscom.ch/store-tv/wireline-tv/tvsubscriptioncenter?language=it&case=shortregistration&option=TV_DISNEYPLUS_PREMIUM_ANNUAL&bigscreen=false&skipPdp=true&login=true&clientType=swisscomportal&sourceSystem=SUBSCRIPTION-HUB",
+      "found_on_page": "https://www.swisscom.ch/it/clienti-privati/abbonamento-tv/pacchetti-supplementari/disneyplus.html"
+    },
+    {
+      "keyword": "disney",
+      "title": "Disney+ Standard con pubblicità",
+      "snippet": "Disney+ Standard con pubblicità Fino a Full HD 1080p; qualità audio fino a 5.1 2 dispositivi contemporaneamente Nessun download Streaming con pubblicità 9.90/mese Può essere cancellato mensilmente, senza un periodo minimo di contratto Scegli abbonamento",
+      "promo": null,
+      "price": "9.90/mese",
+      "link": "https://www.swisscom.ch/store-tv/wireline-tv/tvsubscriptioncenter?language=it&case=shortregistration&option=TV_DISNEYPLUS_BASIC_MONTHLY&bigscreen=false&skipPdp=true&login=true&clientType=swisscomportal&sourceSystem=SUBSCRIPTION-HUB",
+      "found_on_page": "https://www.swisscom.ch/it/clienti-privati/abbonamento-tv/pacchetti-supplementari/disneyplus.html"
+    },
+    {
+      "keyword": "netflix",
+      "title": "Netflix Basic",
+      "snippet": "Netflix Basic Qualità video (720p) Guarda su 1 dispositivo supportato alla volta 14.90/mese Scegli abbonamento",
+      "promo": null,
+      "price": "14.90/mese",
+      "link": "https://www.swisscom.ch/store-tv/wireline-tv/tvsubscriptioncenter?language=it&case=shortregistration&option=TV_NETFLIX_ADDON_BASIC&bigscreen=false&skipPdp=true&login=true&clientType=swisscomportal",
+      "found_on_page": "https://www.swisscom.ch/it/clienti-privati/abbonamento-tv/pacchetti-supplementari/netflix.html"
+    },
+    {
+      "keyword": "netflix",
+      "title": "Netflix Standard",
+      "snippet": "Netflix Standard Qualità Video (1080p) Guarda su 2 dispositivi supportati alla volta 0.–/mese Per 3 mesi, poi 22.90 Scegli abbonamento",
+      "promo": null,
+      "price": "0.–/mese",
+      "link": "https://www.swisscom.ch/store-tv/wireline-tv/tvsubscriptioncenter?language=it&case=shortregistration&option=TV_NETFLIX_ADDON_STANDARD&bigscreen=false&skipPdp=true&login=true&clientType=swisscomportal",
+      "found_on_page": "https://www.swisscom.ch/it/clienti-privati/abbonamento-tv/pacchetti-supplementari/netflix.html"
+    },
+    {
+      "keyword": "netflix",
+      "title": "Netflix Premium",
+      "snippet": "Netflix Premium Qualità video (2160p) Guarda su 4 dispositivi supportati alla volta 29.90/mese Scegli abbonamento",
+      "promo": null,
+      "price": "29.90/mese",
+      "link": "https://www.swisscom.ch/store-tv/wireline-tv/tvsubscriptioncenter?language=it&case=shortregistration&option=TV_NETFLIX_ADDON_PREMIUM&bigscreen=false&skipPdp=true&login=true&clientType=swisscomportal",
+      "found_on_page": "https://www.swisscom.ch/it/clienti-privati/abbonamento-tv/pacchetti-supplementari/netflix.html"
+    },
+    {
+      "keyword": "netflix",
+      "title": "Netflix Base",
+      "snippet": "Netflix Base Qualità video (720p) Guarda su 1 dispositivo supportato alla volta ​ Per 3 mesi 7.45/mese Scegli abbonamento",
+      "promo": null,
+      "price": "7.45/mese",
+      "link": "https://www.swisscom.ch/store-tv/wireline-tv/tvsubscriptioncenter?language=it&case=shortregistration&option=TV_NETFLIX_ADDON_BASIC&bigscreen=false&skipPdp=true&login=true&clientType=swisscomportal&sourceSystem=SUBSCRIPTION-HUB",
+      "found_on_page": "https://www.swisscom.ch/it/clienti-privati/abbonamento-tv/pacchetti-supplementari/netflix.html"
+    },
+    {
+      "keyword": "netflix",
+      "title": "Netflix",
+      "snippet": "Netflix via Swisscom Pluripremiate serie Netflix, film, documentari e molto altro. Su tutti i vostri apparecchi, compresi Swisscom Box 21, smart TV, laptop, smartphone e tablet Senza pubblicità Profili per i bambini Serie scaricabili per guardarle offline Disdetta possibile in qualsiasi momento Netflix Basic Qualità video (720p) Guarda su 1 dispositivo supportato alla volta 14.90/mese Scegli abbon",
+      "promo": null,
+      "price": "14.90/mese",
+      "link": "https://www.swisscom.ch/store-tv/wireline-tv/tvsubscriptioncenter?language=it&case=shortregistration&option=TV_NETFLIX_ADDON_BASIC&bigscreen=false&skipPdp=true&login=true&clientType=swisscomportal",
+      "found_on_page": "https://www.swisscom.ch/it/clienti-privati/abbonamento-tv/pacchetti-supplementari/netflix.html"
+    },
+    {
+      "keyword": "netflix",
+      "title": "Netflix",
+      "snippet": "Sky Sport: tutto quello che vi fa battere il cuore Sky Sport è il pacchetto supplementare TV che porta sul vostro schermo lo sport in diretta, come calcio, tennis, golf, motori e molto altro Contenuti esclusivi come la Bundesliga o il golf A casa o in mobilità: disponibile su smart TV, smartphone e tablet o computer Disdetta possibile ogni mese 24.90/mese Disdetta possibile ogni mese, senza durata",
+      "promo": null,
+      "price": "24.90/mese",
+      "link": "https://www.swisscom.ch/store-tv/wireline-tv/tvsubscriptioncenter?language=en&case=shortregistration&option=TV_NETFLIX_ADDON_BASIC&bigscreen=false&skipPdp=true&login=true",
+      "found_on_page": "https://www.swisscom.ch/it/clienti-privati/abbonamento-tv/pacchetti-supplementari/sky-sport.html"
+    },
+    {
+      "keyword": "tv",
+      "title": "Requisito: abbonamento blue TV",
+      "snippet": "Con l’opzione Multiroom Max potete usare il vostro abbonamento blue TV su anche cinque televisori contemporaneamente. Per 4 televisori supplementari Incluse tutte le funzioni del vostro abbonamento TV Utilizzabile nella seconda casa Requisito: abbonamento blue TV 9.90/mese",
+      "promo": null,
+      "price": "9.90/mese",
+      "link": null,
+      "found_on_page": "https://www.swisscom.ch/it/clienti-privati/abbonamento-tv/multiroom-max.html"
+    },
+    {
+      "keyword": "tv",
+      "title": "Swisscom blue TV Multiroom Max",
+      "snippet": "Opzione per televisori supplementari Con l’opzione Multiroom Max potete usare il vostro abbonamento blue TV su anche cinque televisori contemporaneamente. Per 4 televisori supplementari Incluse tutte le funzioni del vostro abbonamento TV Utilizzabile nella seconda casa Requisito: abbonamento blue TV 9.90/mese Non avete ancora un abbonamento blue TV?",
+      "promo": null,
+      "price": "9.90/mese",
+      "link": "https://www.swisscom.ch/it/clienti-privati/abbonamento-tv.html",
+      "found_on_page": "https://www.swisscom.ch/it/clienti-privati/abbonamento-tv/multiroom-max.html"
+    },
+    {
+      "keyword": "mysecurity",
+      "title": "My Security XS",
+      "snippet": "My Security XS Protezione automatica: per tutti i dispositivi in casa, non richiede installazione. ​ 0.–/Mese Per 1 mese, poi 6.90 Protezione per la casa ​ Protezione automatica e avanzata contro siti web dannosi e malware ​ Blocca virus e attacchi hacker ​ Tutti i dispositivi collegati a Internet tramite il router sono protetti ​ Nessuna installazione necessaria La migliore protezione in moviment",
+      "promo": null,
+      "price": "0.–/Mese",
+      "link": "https://www.swisscom.ch/it/clienti-privati/abbonamento-internet/sicuro-in-modo-digitale/vas-xs-details.html",
+      "found_on_page": "https://www.swisscom.ch/it/clienti-privati/abbonamento-internet/protezione-sicurezza.html"
+    },
+    {
+      "keyword": "mysecurity",
+      "title": "My Security S",
+      "snippet": "My Security S La migliore protezione: per tutti i dispositivi, a casa e in viaggio. + 0.–/Mese Per 1 mese, poi 9.90 Protezione per la casa ​ Protezione automatica e avanzata contro siti web dannosi e malware ​ Blocca virus e attacchi hacker ​ Tutti i dispositivi collegati a Internet tramite il router sono protetti ​ Nessuna installazione necessaria La migliore protezione in movimento con l'app ​ M",
+      "promo": null,
+      "price": "0.–/Mese",
+      "link": "https://www.swisscom.ch/it/clienti-privati/abbonamento-internet/sicuro-in-modo-digitale/vas-s-details.html",
+      "found_on_page": "https://www.swisscom.ch/it/clienti-privati/abbonamento-internet/protezione-sicurezza.html"
+    },
+    {
+      "keyword": "mysecurity",
+      "title": "My Security M",
+      "snippet": "My Security M La migliore protezione: per tutti i dispositivi e i dati a casa e in viaggio, con ulteriore assistenza da parte di professionisti della sicurezza. + + + 9.90/Mese Per 1 mese, poi 19.90 Protezione per la casa ​ Protezione automatica e avanzata contro siti web dannosi e malware ​ Blocca virus e attacchi hacker ​ Tutti i dispositivi collegati a Internet tramite il router sono protetti ​",
+      "promo": null,
+      "price": "9.90/Mese",
+      "link": "https://www.swisscom.ch/it/clienti-privati/abbonamento-internet/sicuro-in-modo-digitale/vas-m-details.html",
+      "found_on_page": "https://www.swisscom.ch/it/clienti-privati/abbonamento-internet/protezione-sicurezza.html"
+    },
+    {
+      "keyword": "mysecurity",
+      "title": "My Security L",
+      "snippet": "My Security L ​La migliore protezione: per tutti i dispositivi e i dati a casa e in viaggio, ulteriore assistenza da parte di professionisti della sicurezza e assicurazione di tutela legale. + + + + 24.90/Mese Per 1 mese, poi 34.90 Protezione per la casa ​ Protezione automatica e avanzata contro siti web dannosi e malware ​ Blocca virus e attacchi hacker ​ Tutti i dispositivi collegati a Internet ",
+      "promo": null,
+      "price": "24.90/Mese",
+      "link": "https://www.swisscom.ch/it/clienti-privati/abbonamento-internet/sicuro-in-modo-digitale/vas-l-details.html",
+      "found_on_page": "https://www.swisscom.ch/it/clienti-privati/abbonamento-internet/protezione-sicurezza.html"
+    },
+    {
+      "keyword": "myservice",
+      "title": "My Service Mobile S",
+      "snippet": "Per i nuovi clienti My Service Mobile S 6 prestazioni di supporto all’anno Per cellulari, tablet, smartwatch, ecc. Negli Swisscom Shop e da remoto tramite hotline e accesso remoto Per 1 persona Dettagli dell’abo 9.90/mese ​0.– per 1 mese 12 mesi di durata minima del contratto Scegli abbonamento",
+      "promo": null,
+      "price": "9.90/mese",
+      "link": "https://www.swisscom.ch/it/clienti-privati/abbonamento-internet/myservice/myservice-mobile-basic.html",
+      "found_on_page": "https://www.swisscom.ch/it/clienti-privati/abbonamento-internet/myservice.html"
+    },
+    {
+      "keyword": "myservice",
+      "title": "My Service Computer S",
+      "snippet": "Per i nuovi clienti My Service Computer S 6 prestazioni di supporto all’anno Per computer, notebook, stampante ecc. Remoto tramite hotline e accesso remoto ​Per 1 persona Dettagli dell’abo 9.90/mese ​0.– per 1 mese Trasferta 80.– 12 mesi di durata minima del contratto Scegli abbonamento",
+      "promo": null,
+      "price": "9.90/mese",
+      "link": "https://www.swisscom.ch/it/clienti-privati/abbonamento-internet/myservice/myservice-computer-basic.html",
+      "found_on_page": "https://www.swisscom.ch/it/clienti-privati/abbonamento-internet/myservice.html"
+    },
+    {
+      "keyword": "myservice",
+      "title": "My Service M",
+      "snippet": "Per i nuovi clienti My Service M 12 prestazioni di supporto all’anno Per tutti i dispositivi (cellulare, computer, stampante ecc.) Negli Swisscom Shop e da remoto tramite hotline e accesso remoto Negli Swisscom Shop e da remoto tramite hotline e accesso remoto Dettagli dell’abo 16.90/mese ​0.– per 1 mese Trasferta 80.– 12 mesi di durata minima del contratto Scegli abbonamento",
+      "promo": null,
+      "price": "16.90/mese",
+      "link": "https://www.swisscom.ch/it/clienti-privati/abbonamento-internet/myservice/myservice-all-in-standard.html",
+      "found_on_page": "https://www.swisscom.ch/it/clienti-privati/abbonamento-internet/myservice.html"
+    },
+    {
+      "keyword": "myservice",
+      "title": "My Service L",
+      "snippet": "Per i nuovi clienti My Service L 24 prestazioni di supporto all’anno Per tutti i dispositivi (cellulare, computer, stampante ecc.) Da remoto, negli Swisscom Shop o in loco Per 5 persone Dettagli dell’abo 21.90/mese ​0.– per 1 mese Trasferta incl. 12 mesi di durata minima del contratto Scegli abbonamento",
+      "promo": null,
+      "price": "21.90/mese",
+      "link": "https://www.swisscom.ch/it/clienti-privati/abbonamento-internet/myservice/myservice-all-in-one-plus.html",
+      "found_on_page": "https://www.swisscom.ch/it/clienti-privati/abbonamento-internet/myservice.html"
+    },
+    {
+      "keyword": "internet",
+      "title": "Protezione Internet Internet Guard",
+      "snippet": "Con gli abbonamenti mobili di Swisscom puoi approfittare di tanti servizi extra gratuiti. Swisscom Cockpit In Swisscom Cockpit hai una panoramica dei servizi inclusi nell'abbonamento e dei costi correnti. Puoi collegare e gestire altri dispositivi con il tuo abbonamento, nonché acquistare pacchetti e opzioni. App My Swisscom Con My Swisscom puoi controllare in qualsiasi momento i costi e le fattur",
+      "promo": "extra gratuiti",
+      "price": null,
+      "link": "https://www.swisscom.ch/it/clienti-privati/aiuto/mobile/cockpit.html",
+      "found_on_page": "https://www.swisscom.ch/it/clienti-privati/abbonamento-mobile.html"
+    },
+    {
+      "keyword": "internet",
+      "title": "Internet Guard",
+      "snippet": "Con un abbonamento Internet di Swisscom ricevi numerosi extra gratuiti. Ad esempio, è incluso gratis un router WLAN. Con My Swisscom, la migliore app di servizio (primo posto nel test), installare e gestire il collegamento è un gioco da ragazzi. Internet Guard ti protegge mentre navigate senza dover installare software aggiuntivi. Ricevi Bluewin e-mail con 5 GB di spazio e 10 GB di memoria per fot",
+      "promo": "incluso gratis",
+      "price": null,
+      "link": "https://www.swisscom.ch/it/clienti-privati/abbonamento-internet/sicuro-in-modo-digitale/internet-guard-details-lightbox.html",
+      "found_on_page": "https://www.swisscom.ch/it/clienti-privati/abbonamento-internet.html"
+    },
+    {
+      "keyword": "internet",
+      "title": "blue Internet S, M o L? A te la scelta:",
+      "snippet": "blue Internet S, M o L? A te la scelta: tutti gli abbonamenti a 39.90/mese",
+      "promo": null,
+      "price": "39.90/mese",
+      "link": null,
+      "found_on_page": "https://www.swisscom.ch/it/clienti-privati/abbonamento-internet.html"
+    },
+    {
+      "keyword": "netflix",
+      "title": "blue Binge – Netflix e Disney+",
+      "snippet": "blue Binge – Netflix e Disney+ Nell’abbonamento blue TV XL Streaming è incluso blue Binge con Netflix(apre una nuova finestra) Base e Disney+(apre una nuova finestra) Standard. Al vantaggioso prezzo mensile di 24.90 (anziché 27.80/mese, se acquistato separatamente tramite il provider) potete aggiungere blue Binge con Netflix Base e Disney+ Standard anche negli altri abbonamenti TV di Swisscom. In ",
+      "promo": null,
+      "price": "27.80/mese",
+      "link": "https://www.netflix.com/ch-en",
+      "found_on_page": "https://www.swisscom.ch/it/clienti-privati/abbonamento-tv/blue-tv-xl-streaming.html"
+    },
+    {
+      "keyword": "internet",
+      "title": "Internet",
+      "snippet": "Internet In Svizzera Trasmissione dati 1.5 GB/mese 500 MB/mese Nella rete mobile Swisscom (CH e FL) e Swisscom Public WLAN. Una volta esaurito il volume incluso la connessione dati viene interrotta. Pacchetto dati supplementare da 500 MB 5.–/mese 5.–/mese Velocità: 50 Mbit/s, attivazione nel Cockpit. Al di fuori della Svizzera Pacchetti dati acquistabili nel Cockpit da 4.90/30 giorni da 4.90/30 gi",
+      "promo": null,
+      "price": "5.–/mese",
+      "link": null,
+      "found_on_page": "https://www.swisscom.ch/it/clienti-privati/popup/abo-listing-details/swiss-mobile-light-plus.html"
+    },
+    {
+      "keyword": "disney",
+      "title": "Sottoscrivendo un nuovo blue Mobile riceverai 3 mesi di Disney+ Standard con pub come credito (valore totale: 29.70 (3 x 9.90/mese)).",
+      "snippet": "Sottoscrivendo un nuovo blue Mobile riceverai 3 mesi di Disney+ Standard con pub come credito (valore totale: 29.70 (3 x 9.90/mese)).",
+      "promo": "3 mesi di Disney+ Standard con pub come credito",
+      "price": "9.90/mese",
+      "link": null,
+      "found_on_page": "https://www.swisscom.ch/it/clienti-privati/abbonamento-mobile/blue-mobile-s.html"
+    },
+    {
+      "keyword": "disney",
+      "title": "La promozione è cumulabile con altre promozioni come ad esempio 6 mesi Disney+ Standard con pubblicità in regalo.",
+      "snippet": "La promozione è cumulabile con altre promozioni come ad esempio 6 mesi Disney+ Standard con pubblicità in regalo.",
+      "promo": "6 mesi Disney+ Standard con pubblicità in regalo",
+      "price": null,
+      "link": null,
+      "found_on_page": "https://www.swisscom.ch/it/clienti-privati/abbonamento-mobile/blue-mobile-s.html"
+    },
+    {
+      "keyword": "internet",
+      "title": "per 6 mesi, poi 99.90/mese o 79.90/mese per i clienti Internet di Swisscom",
+      "snippet": "per 6 mesi, poi 99.90/mese o 79.90/mese per i clienti Internet di Swisscom",
+      "promo": null,
+      "price": "99.90/mese",
+      "link": null,
+      "found_on_page": "https://www.swisscom.ch/it/clienti-privati/abbonamento-mobile/blue-mobile-l.html"
+    }
+  ]
+}
