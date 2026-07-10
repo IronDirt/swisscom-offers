@@ -1,0 +1,165 @@
+{
+  "scraped_at": "2026-07-10T10:04:00.211Z",
+  "pages": [
+    "https://www.swisscom.ch/it/clienti-privati/abbonamento-tv/pacchetti-supplementari.html",
+    "https://www.swisscom.ch/it/clienti-privati/abbonamento-internet/sicuro-in-modo-digitale.html",
+    "https://www.swisscom.ch/it/clienti-privati/abbonamento-tv.html",
+    "https://www.swisscom.ch/it/clienti-privati/abbonamento-internet/myservice.html"
+  ],
+  "keywords": [
+    "netflix",
+    "disney",
+    "blue binge",
+    "myservice",
+    "mysecurity",
+    "tv"
+  ],
+  "total_matches": 16,
+  "total_matches_before_filter": 99,
+  "offers": [
+    {
+      "keyword": "netflix",
+      "title": "Attiva Netflix Standard e ricevi 3 mesi gratis.",
+      "snippet": "Attiva Netflix Standard e ricevi 3 mesi gratis.",
+      "promo": "3 mesi gratis",
+      "price": null,
+      "link": null,
+      "found_on_page": "https://www.swisscom.ch/it/clienti-privati/abbonamento-tv/pacchetti-supplementari.html"
+    },
+    {
+      "keyword": "blue binge",
+      "title": "blue Binge:",
+      "snippet": "blue Binge: il pacchetto di base per chi ama lo streaming – film e serie a non finire su Netflix e Disney+ a un imbattibile prezzo agevolato con uno sconto permanente del 21%.",
+      "promo": "sconto permanente del 21%",
+      "price": null,
+      "link": null,
+      "found_on_page": "https://www.swisscom.ch/it/clienti-privati/abbonamento-tv/pacchetti-supplementari.html"
+    },
+    {
+      "keyword": "netflix",
+      "title": "​ 3 mesi di Netflix Standard in omaggio",
+      "snippet": "​ 3 mesi di Netflix Standard in omaggio Da 14.90/mese",
+      "promo": "3 mesi di Netflix Standard in omaggio",
+      "price": "Da 14.90/mese",
+      "link": null,
+      "found_on_page": "https://www.swisscom.ch/it/clienti-privati/abbonamento-tv/pacchetti-supplementari.html"
+    },
+    {
+      "keyword": "tv",
+      "title": "Disponibile con blue TV M, L & XL",
+      "snippet": "Disponibile con blue TV M, L & XL 8.90/mese",
+      "promo": null,
+      "price": "8.90/mese",
+      "link": null,
+      "found_on_page": "https://www.swisscom.ch/it/clienti-privati/abbonamento-tv/pacchetti-supplementari.html"
+    },
+    {
+      "keyword": "disney",
+      "title": "Logo Disneyplus",
+      "snippet": "Disney+: Intrattenimento senza sosta con i grandi film appena usciti e un’infinità di serie firmate Disney, Pixar, Marvel, Star Wars, National Geographic e Star. Da 9.90/mese Scelga il pacchetto",
+      "promo": null,
+      "price": "Da 9.90/mese",
+      "link": "https://www.swisscom.ch/it/clienti-privati/abbonamento-tv/pacchetti-supplementari/disneyplus.html",
+      "found_on_page": "https://www.swisscom.ch/it/clienti-privati/abbonamento-tv/pacchetti-supplementari.html"
+    },
+    {
+      "keyword": "netflix",
+      "title": "Logo Netflix",
+      "snippet": "Netflix: Netflix propone un catalogo sconfinato di film, documentari, serie, anime, premiati originali Netflix e molto altro. Guardate quello che volete, quanto e quando volete. ​ 3 mesi di Netflix Standard in omaggio Da 14.90/mese Scelga il pacchetto",
+      "promo": "3 mesi di Netflix Standard in omaggio",
+      "price": "Da 14.90/mese",
+      "link": "https://www.swisscom.ch/it/clienti-privati/abbonamento-tv/pacchetti-supplementari/netflix.html",
+      "found_on_page": "https://www.swisscom.ch/it/clienti-privati/abbonamento-tv/pacchetti-supplementari.html"
+    },
+    {
+      "keyword": "mysecurity",
+      "title": "My Security XS",
+      "snippet": "My Security XS Protezione automatica: per tutti i dispositivi in casa, non richiede installazione. ​ 0.–/Mese Per 1 mese, poi 6.90 Protezione per la casa ​ Protezione automatica e avanzata contro siti web dannosi e malware ​ Blocca virus e attacchi hacker ​ Tutti i dispositivi collegati a Internet tramite il router sono protetti ​ Nessuna installazione necessaria La migliore protezione in moviment",
+      "promo": null,
+      "price": "0.–/Mese",
+      "link": "https://www.swisscom.ch/it/clienti-privati/abbonamento-internet/sicuro-in-modo-digitale/vas-xs-details.html",
+      "found_on_page": "https://www.swisscom.ch/it/clienti-privati/abbonamento-internet/sicuro-in-modo-digitale.html"
+    },
+    {
+      "keyword": "mysecurity",
+      "title": "My Security S",
+      "snippet": "My Security S La migliore protezione: per tutti i dispositivi, a casa e in viaggio. + 0.–/Mese Per 1 mese, poi 9.90 Protezione per la casa ​ Protezione automatica e avanzata contro siti web dannosi e malware ​ Blocca virus e attacchi hacker ​ Tutti i dispositivi collegati a Internet tramite il router sono protetti ​ Nessuna installazione necessaria La migliore protezione in movimento con l'app ​ M",
+      "promo": null,
+      "price": "0.–/Mese",
+      "link": "https://www.swisscom.ch/it/clienti-privati/abbonamento-internet/sicuro-in-modo-digitale/vas-s-details.html",
+      "found_on_page": "https://www.swisscom.ch/it/clienti-privati/abbonamento-internet/sicuro-in-modo-digitale.html"
+    },
+    {
+      "keyword": "mysecurity",
+      "title": "My Security M",
+      "snippet": "My Security M La migliore protezione: per tutti i dispositivi e i dati a casa e in viaggio, con ulteriore assistenza da parte di professionisti della sicurezza. + + + 9.90/Mese Per 1 mese, poi 19.90 Protezione per la casa ​ Protezione automatica e avanzata contro siti web dannosi e malware ​ Blocca virus e attacchi hacker ​ Tutti i dispositivi collegati a Internet tramite il router sono protetti ​",
+      "promo": null,
+      "price": "9.90/Mese",
+      "link": "https://www.swisscom.ch/it/clienti-privati/abbonamento-internet/sicuro-in-modo-digitale/vas-m-details.html",
+      "found_on_page": "https://www.swisscom.ch/it/clienti-privati/abbonamento-internet/sicuro-in-modo-digitale.html"
+    },
+    {
+      "keyword": "mysecurity",
+      "title": "My Security L",
+      "snippet": "My Security L ​La migliore protezione: per tutti i dispositivi e i dati a casa e in viaggio, ulteriore assistenza da parte di professionisti della sicurezza e assicurazione di tutela legale. + + + + 24.90/Mese Per 1 mese, poi 34.90 Protezione per la casa ​ Protezione automatica e avanzata contro siti web dannosi e malware ​ Blocca virus e attacchi hacker ​ Tutti i dispositivi collegati a Internet ",
+      "promo": null,
+      "price": "24.90/Mese",
+      "link": "https://www.swisscom.ch/it/clienti-privati/abbonamento-internet/sicuro-in-modo-digitale/vas-l-details.html",
+      "found_on_page": "https://www.swisscom.ch/it/clienti-privati/abbonamento-internet/sicuro-in-modo-digitale.html"
+    },
+    {
+      "keyword": "tv",
+      "title": "Il miglior abbonamento Internet e la TV più amata Internet e TV 1 anno da 39.90/mese All’offerta",
+      "snippet": "Il miglior abbonamento Internet e la TV più amata Internet e TV 1 anno da 39.90/mese All’offerta",
+      "promo": null,
+      "price": "da 39.90/mese",
+      "link": "https://www.swisscom.ch/it/clienti-privati/abbonamento-combinato/promotion.html",
+      "found_on_page": "https://www.swisscom.ch/it/clienti-privati/abbonamento-tv.html"
+    },
+    {
+      "keyword": "tv",
+      "title": "Internet e TV 1 anno da 39.90/mese",
+      "snippet": "Il miglior abbonamento Internet e la TV più amata Internet e TV 1 anno da 39.90/mese",
+      "promo": null,
+      "price": "da 39.90/mese",
+      "link": null,
+      "found_on_page": "https://www.swisscom.ch/it/clienti-privati/abbonamento-tv.html"
+    },
+    {
+      "keyword": "myservice",
+      "title": "My Service Mobile S",
+      "snippet": "Per i nuovi clienti My Service Mobile S 6 prestazioni di supporto all’anno Per cellulari, tablet, smartwatch, ecc. Negli Swisscom Shop e da remoto tramite hotline e accesso remoto Per 1 persona Dettagli dell’abo 9.90/mese ​0.– per 1 mese 12 mesi di durata minima del contratto Scegli abbonamento",
+      "promo": "0.– per 1 mese",
+      "price": "9.90/mese",
+      "link": "https://www.swisscom.ch/it/clienti-privati/abbonamento-internet/myservice/myservice-mobile-basic.html",
+      "found_on_page": "https://www.swisscom.ch/it/clienti-privati/abbonamento-internet/myservice.html"
+    },
+    {
+      "keyword": "myservice",
+      "title": "My Service Computer S",
+      "snippet": "Per i nuovi clienti My Service Computer S 6 prestazioni di supporto all’anno Per computer, notebook, stampante ecc. Remoto tramite hotline e accesso remoto ​Per 1 persona Dettagli dell’abo 9.90/mese ​0.– per 1 mese Trasferta 80.– 12 mesi di durata minima del contratto Scegli abbonamento",
+      "promo": "0.– per 1 mese",
+      "price": "9.90/mese",
+      "link": "https://www.swisscom.ch/it/clienti-privati/abbonamento-internet/myservice/myservice-computer-basic.html",
+      "found_on_page": "https://www.swisscom.ch/it/clienti-privati/abbonamento-internet/myservice.html"
+    },
+    {
+      "keyword": "myservice",
+      "title": "My Service M",
+      "snippet": "Per i nuovi clienti My Service M 12 prestazioni di supporto all’anno Per tutti i dispositivi (cellulare, computer, stampante ecc.) Negli Swisscom Shop e da remoto tramite hotline e accesso remoto Negli Swisscom Shop e da remoto tramite hotline e accesso remoto Dettagli dell’abo 16.90/mese ​0.– per 1 mese Trasferta 80.– 12 mesi di durata minima del contratto Scegli abbonamento",
+      "promo": "0.– per 1 mese",
+      "price": "16.90/mese",
+      "link": "https://www.swisscom.ch/it/clienti-privati/abbonamento-internet/myservice/myservice-all-in-standard.html",
+      "found_on_page": "https://www.swisscom.ch/it/clienti-privati/abbonamento-internet/myservice.html"
+    },
+    {
+      "keyword": "myservice",
+      "title": "My Service L",
+      "snippet": "Per i nuovi clienti My Service L 24 prestazioni di supporto all’anno Per tutti i dispositivi (cellulare, computer, stampante ecc.) Da remoto, negli Swisscom Shop o in loco Per 5 persone Dettagli dell’abo 21.90/mese ​0.– per 1 mese Trasferta incl. 12 mesi di durata minima del contratto Scegli abbonamento",
+      "promo": "0.– per 1 mese",
+      "price": "21.90/mese",
+      "link": "https://www.swisscom.ch/it/clienti-privati/abbonamento-internet/myservice/myservice-all-in-one-plus.html",
+      "found_on_page": "https://www.swisscom.ch/it/clienti-privati/abbonamento-internet/myservice.html"
+    }
+  ]
+}
