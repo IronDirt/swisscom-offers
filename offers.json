@@ -1,5 +1,5 @@
 {
-  "scraped_at": "2026-07-30T06:34:09.496Z",
+  "scraped_at": "2026-07-31T06:50:37.521Z",
   "pages": [
     "https://www.swisscom.ch/it/clienti-privati/abbonamento-tv/pacchetti-supplementari.html",
     "https://www.swisscom.ch/it/clienti-privati/abbonamento-internet/sicuro-in-modo-digitale.html",
@@ -14,8 +14,8 @@
     "mysecurity",
     "tv"
   ],
-  "total_matches": 12,
-  "total_matches_before_filter": 92,
+  "total_matches": 13,
+  "total_matches_before_filter": 103,
   "offers": [
     {
       "keyword": "blue binge",
@@ -91,9 +91,18 @@
     },
     {
       "keyword": "myservice",
+      "title": "Abbonamenti My Service",
+      "snippet": "Abbonamenti My Service Con il tuo abbonamento My Service Support mantieni la calma, anche se qualcosa non funziona con i tuoi dispositivi digitali. I nostri professionisti ti assistono in modo rapido e semplice. My Service Mobile S 9.90/mese 1 mese in omaggio ​ 6 sessioni di assistenza all’anno ​ Per cellulari, tablet, orologi, ecc. ​ Nello Swisscom Shop e da remoto tramite hotline e accesso remot",
+      "promo": "1 mese in omaggio",
+      "price": "9.90/mese",
+      "link": "https://www.swisscom.ch/it/clienti-privati/abbonamento-internet/myservice/myservice-mobile-basic.html",
+      "found_on_page": "https://www.swisscom.ch/it/clienti-privati/abbonamento-internet/myservice.html"
+    },
+    {
+      "keyword": "myservice",
       "title": "My Service Mobile S",
-      "snippet": "Per i nuovi clienti My Service Mobile S 6 prestazioni di supporto all’anno Per cellulari, tablet, smartwatch, ecc. Negli Swisscom Shop e da remoto tramite hotline e accesso remoto Per 1 persona Dettagli dell’abo 9.90/mese ​0.– per 1 mese 12 mesi di durata minima del contratto Scegli abbonamento",
-      "promo": "0.– per 1 mese",
+      "snippet": "My Service Mobile S 9.90/mese 1 mese in omaggio ​ 6 sessioni di assistenza all’anno ​ Per cellulari, tablet, orologi, ecc. ​ Nello Swisscom Shop e da remoto tramite hotline e accesso remoto ​ Per 1 persona 12 mesi di durata minima del contratto Mostra i dettagli dell’abo",
+      "promo": "1 mese in omaggio",
       "price": "9.90/mese",
       "link": "https://www.swisscom.ch/it/clienti-privati/abbonamento-internet/myservice/myservice-mobile-basic.html",
       "found_on_page": "https://www.swisscom.ch/it/clienti-privati/abbonamento-internet/myservice.html"
@@ -101,8 +110,8 @@
     {
       "keyword": "myservice",
       "title": "My Service Computer S",
-      "snippet": "Per i nuovi clienti My Service Computer S 6 prestazioni di supporto all’anno Per computer, notebook, stampante ecc. Remoto tramite hotline e accesso remoto ​Per 1 persona Dettagli dell’abo 9.90/mese ​0.– per 1 mese Trasferta 80.– 12 mesi di durata minima del contratto Scegli abbonamento",
-      "promo": "0.– per 1 mese",
+      "snippet": "My Service Computer S 9.90/mese 1 mese in omaggio ​ 6 sessioni di assistenza all’anno ​ Per computer, notebook, stampante ecc. ​ Assistenza remota tramite hotline e accesso remoto ​ Per 1 persona 12 mesi di durata minima del contratto Mostra i dettagli dell’abo",
+      "promo": "1 mese in omaggio",
       "price": "9.90/mese",
       "link": "https://www.swisscom.ch/it/clienti-privati/abbonamento-internet/myservice/myservice-computer-basic.html",
       "found_on_page": "https://www.swisscom.ch/it/clienti-privati/abbonamento-internet/myservice.html"
@@ -110,8 +119,8 @@
     {
       "keyword": "myservice",
       "title": "My Service M",
-      "snippet": "Per i nuovi clienti My Service M 12 prestazioni di supporto all’anno Per tutti i dispositivi (cellulare, computer, stampante ecc.) Negli Swisscom Shop e da remoto tramite hotline e accesso remoto Negli Swisscom Shop e da remoto tramite hotline e accesso remoto Dettagli dell’abo 16.90/mese ​0.– per 1 mese Trasferta 80.– 12 mesi di durata minima del contratto Scegli abbonamento",
-      "promo": "0.– per 1 mese",
+      "snippet": "My Service M 16.90/mese 1 mese in omaggio ​ 12 interventi di assistenza all’anno ​ Per tutti i dispositivi (cellulare, computer, stampante, ecc.) ​ Nello Swisscom Shop e da remoto tramite hotline e accesso remoto ​ Per 1 persona 12 mesi di durata minima del contratto Mostra i dettagli dell’abo",
+      "promo": "1 mese in omaggio",
       "price": "16.90/mese",
       "link": "https://www.swisscom.ch/it/clienti-privati/abbonamento-internet/myservice/myservice-all-in-standard.html",
       "found_on_page": "https://www.swisscom.ch/it/clienti-privati/abbonamento-internet/myservice.html"
@@ -119,8 +128,8 @@
     {
       "keyword": "myservice",
       "title": "My Service L",
-      "snippet": "Per i nuovi clienti My Service L 24 prestazioni di supporto all’anno Per tutti i dispositivi (cellulare, computer, stampante ecc.) Da remoto, negli Swisscom Shop o in loco Per 5 persone Dettagli dell’abo 21.90/mese ​0.– per 1 mese Trasferta incl. 12 mesi di durata minima del contratto Scegli abbonamento",
-      "promo": "0.– per 1 mese",
+      "snippet": "My Service L 21.90/mese 1 mese in omaggio ​ 24 interventi di assistenza all’anno ​ Per tutti i dispositivi (cellulare, computer, stampante, ecc.) ​ Nello Swisscom Shop, da remoto o direttamente a casa tua ​ Per 5 persone 12 mesi di durata minima del contratto Mostra i dettagli dell’abo",
+      "promo": "1 mese in omaggio",
       "price": "21.90/mese",
       "link": "https://www.swisscom.ch/it/clienti-privati/abbonamento-internet/myservice/myservice-all-in-one-plus.html",
       "found_on_page": "https://www.swisscom.ch/it/clienti-privati/abbonamento-internet/myservice.html"
