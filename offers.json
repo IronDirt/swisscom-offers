@@ -1,5 +1,5 @@
 {
-  "scraped_at": "2026-08-02T06:39:20.176Z",
+  "scraped_at": "2026-08-03T07:35:45.777Z",
   "pages": [
     "https://www.swisscom.ch/it/clienti-privati/abbonamento-tv/pacchetti-supplementari.html",
     "https://www.swisscom.ch/it/clienti-privati/abbonamento-internet/sicuro-in-modo-digitale.html",
@@ -14,8 +14,8 @@
     "mysecurity",
     "tv"
   ],
-  "total_matches": 13,
-  "total_matches_before_filter": 103,
+  "total_matches": 15,
+  "total_matches_before_filter": 106,
   "offers": [
     {
       "keyword": "blue binge",
@@ -88,6 +88,24 @@
       "price": "24.90/Mese",
       "link": "https://www.swisscom.ch/it/clienti-privati/abbonamento-internet/sicuro-in-modo-digitale/vas-l-details.html",
       "found_on_page": "https://www.swisscom.ch/it/clienti-privati/abbonamento-internet/sicuro-in-modo-digitale.html"
+    },
+    {
+      "keyword": "tv",
+      "title": "Il miglior abbonamento Internet e la TV più amata Internet e TV 1 anno da 39.90/mese All’offerta",
+      "snippet": "Il miglior abbonamento Internet e la TV più amata Internet e TV 1 anno da 39.90/mese All’offerta",
+      "promo": null,
+      "price": "da 39.90/mese",
+      "link": "https://www.swisscom.ch/it/clienti-privati/abbonamento-combinato/promotion.html",
+      "found_on_page": "https://www.swisscom.ch/it/clienti-privati/abbonamento-tv.html"
+    },
+    {
+      "keyword": "tv",
+      "title": "Internet e TV 1 anno da 39.90/mese",
+      "snippet": "Il miglior abbonamento Internet e la TV più amata Internet e TV 1 anno da 39.90/mese",
+      "promo": null,
+      "price": "da 39.90/mese",
+      "link": null,
+      "found_on_page": "https://www.swisscom.ch/it/clienti-privati/abbonamento-tv.html"
     },
     {
       "keyword": "myservice",
